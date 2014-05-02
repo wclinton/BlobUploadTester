@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Sage.Connector.Customers.Contracts.CloudIntegration</id>
+    <version>3.0.10331.6</version>
+    <title>Sage.Connector.Customers.Contracts.CloudIntegration</title>
+    <authors>Sage</authors>
+    <owners>Sage</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Customers Cloud Integration Contracts</description>
+    <summary />
+    <releaseNotes />
+    <copyright>Copyright © Sage 2014</copyright>
+    <dependencies>
+      <dependency id="Sage.Connector.Customers.Contracts.Data" version="3.0.10331.6" />
+      <dependency id="Sage.Connector.DomainContracts.Data" version="3.0.10331.6" />
+      <dependency id="Sage.Connector.DomainContracts.Responses" version="3.0.10331.6" />
+      <dependency id="Sage.Connector.Sync.Contracts.CloudIntegration" version="3.0.10331.6" />
+    </dependencies>
+  </metadata>
+</package>

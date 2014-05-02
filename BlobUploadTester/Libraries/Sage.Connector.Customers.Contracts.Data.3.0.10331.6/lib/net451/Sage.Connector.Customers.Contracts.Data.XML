@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sage.Connector.Customers.Contracts.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Sage.Connector.Customers.Contracts.Data.AddressType">
+            <summary>
+            Address Type
+            </summary>
+        </member>
+        <member name="F:Sage.Connector.Customers.Contracts.Data.AddressType.Home">
+            <summary>
+            Home Address
+            </summary>
+        </member>
+        <member name="F:Sage.Connector.Customers.Contracts.Data.AddressType.Billing">
+            <summary>
+            Billing Address
+            </summary>
+        </member>
+        <member name="F:Sage.Connector.Customers.Contracts.Data.AddressType.Mailing">
+            <summary>
+            Mailing Address
+            </summary>
+        </member>
+        <member name="F:Sage.Connector.Customers.Contracts.Data.AddressType.Other">
+            <summary>
+            Other type of Address
+            </summary>
+        </member>
+        <member name="T:Sage.Connector.Customers.Contracts.Data.Customer">
+            <summary>
+            Customer implementation
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.Name">
+            <summary>
+            Customer Name
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.IsOnCreditHold">
+            <summary>
+            Is On Credit Hold
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.IsCreditLimitUsed">
+            <summary>
+            Is Credit Limit used for this Customer
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.CreditLimit">
+            <summary>
+            Credit Limit for this customer. 
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.CreditAvailable">
+            <summary>
+            Credit Available for this customer. 
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.PaymentTerms">
+            <summary>
+            Payment Terms established for this customer.
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.TaxSchedule">
+            <summary>
+            Tax Schedule External Id used as reference
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.Contacts">
+            <summary>
+            Collection of <see cref="T:Sage.Connector.Customers.Contracts.Data.CustomerContact"/> Contacts for this Customer
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.Addresses">
+            <summary>
+            Collection of <see cref="T:Sage.Connector.Customers.Contracts.Data.CustomerAddress"/> Addresses for this Customer
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.Customer.TaxClasses">
+            <summary>
+            Customer Tax Classes
+            </summary>
+        </member>
+        <member name="T:Sage.Connector.Customers.Contracts.Data.CustomerAddress">
+            <summary>
+            Customer Address Implemenation
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Street1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Street2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Street3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Street4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.StateProvince">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.PostalCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Country">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Phone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.URL">
+            <summary>
+            URL
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.TaxSchedule">
+            <summary>
+            Tax Schedule External Id
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerAddress.Contact">
+            <summary>
+            Contact ExternalId
+            Set this to the primary contact at the address 
+            </summary>
+        </member>
+        <member name="T:Sage.Connector.Customers.Contracts.Data.CustomerContact">
+            <summary>
+            Customer Contact 
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.FirstName">
+            <summary>
+            Contact First Name
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.LastName">
+            <summary>
+            Contact Last Name
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.PhoneWork">
+            <summary>
+            Contact Work Phone
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.EmailWork">
+            <summary>
+            Contact Work Email
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.PhoneMobile">
+            <summary>
+            Contact Mobile Phone
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.PhoneHome">
+            <summary>
+            Contact Home Phone
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.EmailPersonal">
+            <summary>
+            Contact Home Email
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerContact.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="T:Sage.Connector.Customers.Contracts.Data.CustomerTaxClass">
+            <summary>
+            Customer Tax Class 
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerTaxClass.TaxCode">
+            <summary>
+            Tax Code External ID
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Customers.Contracts.Data.CustomerTaxClass.TaxClass">
+            <summary>
+            Tax Class
+            </summary>
+        </member>
+    </members>
+</doc>

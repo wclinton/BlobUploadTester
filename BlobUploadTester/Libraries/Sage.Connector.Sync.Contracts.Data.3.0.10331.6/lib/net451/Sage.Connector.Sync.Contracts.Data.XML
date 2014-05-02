@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sage.Connector.Sync.Contracts.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Sage.Connector.Sync.Contracts.Data.SyncDigest">
+            <summary>
+            SyncDigest contract for sync responses
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Sync.Contracts.Data.SyncDigest.ResourceKindName">
+            <summary>
+            Resource Kind Name
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Sync.Contracts.Data.SyncDigest.EndpointId">
+            <summary>
+            Endpoint Id associated with this tick value
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Sync.Contracts.Data.SyncDigest.EndpointTick">
+            <summary>
+            Endpoint Tick Value
+            </summary>
+        </member>
+    </members>
+</doc>

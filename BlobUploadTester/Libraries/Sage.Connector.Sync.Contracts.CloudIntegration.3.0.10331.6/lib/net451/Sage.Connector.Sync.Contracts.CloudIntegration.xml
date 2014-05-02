@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sage.Connector.Sync.Contracts.CloudIntegration</name>
+    </assembly>
+    <members>
+        <member name="T:Sage.Connector.Sync.Contracts.CloudIntegration.Responses.AbstractSyncResponse">
+            <summary>
+            AbstractSyncResponse
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Sync.Contracts.CloudIntegration.Responses.AbstractSyncResponse.SyncDigest">
+            <summary>
+            Sync Digest for the resource
+            </summary>
+        </member>
+        <member name="T:Sage.Connector.Sync.Contracts.CloudIntegration.Requests.SyncRequest">
+            <summary>
+            Sync Request Payload
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Sync.Contracts.CloudIntegration.Requests.SyncRequest.ResourceKindName">
+            <summary>
+            Resource Kind Name to be used for this synchronization
+            </summary>
+        </member>
+        <member name="P:Sage.Connector.Sync.Contracts.CloudIntegration.Requests.SyncRequest.CloudTick">
+            <summary>
+            Cloud Tick value used by sync to determine changed entities for internal sync's
+            </summary>
+        </member>
+        <member name="T:Sage.Connector.Sync.Contracts.CloudIntegration.SyncConstants">
+            <summary>
+            Set of constants to by used by the sync mediator
+            </summary>
+        </member>
+        <member name="F:Sage.Connector.Sync.Contracts.CloudIntegration.SyncConstants.BackOfficeEndpointId">
+            <summary>
+            Endpoint id for back office sync 
+            </summary>
+        </member>
+    </members>
+</doc>

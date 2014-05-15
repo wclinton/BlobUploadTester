@@ -9,7 +9,7 @@ namespace BlobUploadTester
     public class BlobService
     {
 
-        private static readonly Uri ConnectorServiceUri = new Uri("http://127.255.0.0:82");
+        private static readonly Uri ConnectorServiceUri = new Uri("http://127.255.0.1:82");
         private readonly Guid tenantId;// = new Guid("3813fccf-4946-43e8-ac72-0c00d2df9f6f"); //Sage 300 TenantId
         private readonly Guid sessionId;
 

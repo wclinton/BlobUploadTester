@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Net;
 using BlobUploadTester.ConnectorContracts;
@@ -9,7 +10,7 @@ namespace BlobUploadTester
     public class BlobService
     {
 
-        private static readonly Uri ConnectorServiceUri = new Uri("http://127.255.0.1:82");
+    //    private static readonly Uri ConnectorServiceUri = new Uri("http://127.255.0.1:82");
         private readonly Guid tenantId;// = new Guid("3813fccf-4946-43e8-ac72-0c00d2df9f6f"); //Sage 300 TenantId
         private readonly Guid sessionId;
 
@@ -22,7 +23,8 @@ namespace BlobUploadTester
 
         public Uri GetBlobUploadUrl(Guid uploadId)
         {
-            var url = ConnectorServiceUri + "api/messages/requests/startuploadrequest/" + sessionId;
+            
+            var url = GetConnectorServiceUri() + "api/messages/requests/startuploadrequest/" + sessionId;
 
             var message = new ConnectorMessage()
             {
@@ -47,7 +49,7 @@ namespace BlobUploadTester
 
         public void CompleteBlobUpload(Guid uploadId)
         {
-            var url = String.Format("{0}api/messages/responses/enduploadrequest/{1}/{2}", ConnectorServiceUri, sessionId, uploadId);
+            var url = String.Format("{0}api/messages/responses/enduploadrequest/{1}/{2}", GetConnectorServiceUri(), sessionId, uploadId);
 
             var message = new ConnectorMessage
             {
@@ -65,7 +67,7 @@ namespace BlobUploadTester
 
         public void CompleteAllUploads()
         {
-            var url = String.Format("{0}api/messages/responses/{1}", ConnectorServiceUri,sessionId);
+            var url = String.Format("{0}api/messages/responses/{1}", GetConnectorServiceUri(),sessionId);
 
             var body = new DomainMediationResponse
             {
@@ -93,7 +95,7 @@ namespace BlobUploadTester
         {
             //Step 1 - POST a SyncCustomer request against your cloud deployment
 
-            var url = ConnectorServiceUri + "api/messages/requests";
+            var url = GetConnectorServiceUri() + "api/messages/requests";
 
             var message = new ConnectorMessage
             {
@@ -143,6 +145,9 @@ namespace BlobUploadTester
             }
         }
 
-       
+        private static Uri GetConnectorServiceUri()
+        {
+            return new Uri(ConfigurationManager.AppSettings["ConnectorServiceAddress"]);
+        }       
     }
 }

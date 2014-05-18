@@ -73,7 +73,7 @@ namespace BlobUploadTester
             {
                 DomainMediationEntry = new DomainMediation
                 {
-                    DomainFeatureRequest = "Sage.Cloud.Domain.Customers.Workers.SyncCustomers",
+                    DomainFeatureRequest = "SyncCustomers",
                     
                 }
             };

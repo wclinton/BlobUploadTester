@@ -1,1 +1,0 @@
-In order to run this app - place the connector services ip address in the app.config file.
